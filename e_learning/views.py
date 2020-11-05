@@ -125,7 +125,7 @@ class ProfessorUpdate(PermissionRequiredMixin, UpdateView):
     fields = ['fist_name', 'last_name', 'date_of_birth', 'major'] ## '__all__'은 안되나?
     permission_required = 'e_learning.can_modified_remain_time'
 
-class AuthorDelete(PermissionRequiredMixin, DeleteView):
+class ProfessorDelete(PermissionRequiredMixin, DeleteView):
     model = Professor
     success_url = reverse_lazy('professors')
     permission_required = 'e_learning.can_modified_remain_time'
