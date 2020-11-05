@@ -21,7 +21,7 @@ class Language(models.Model):
 
 class Lecture(models.Model):
     title = models.CharField(max_length=200)
-    prof = models.ForeignKey('Professor', on_delete=models.SET_NULL, null=True)
+    professor = models.ForeignKey('Professor', on_delete=models.SET_NULL, null=True)
     summary = models.TestField(max_length=1000, help_text="Enter a brief descriptiuon of the book")
     major = models.ForeignKey('Major', on_delete=models.SET_NULL, null=True)
     language = models.ForeignKey('Language', on_delete=models.SET_NULL, null=True)
@@ -32,17 +32,25 @@ class Lecture(models.Model):
     def __str__(self):
         return self.name
 
+class Assignment(models.Model):
+    name = models.CharField(max_length=200)
+    due_date = models.DateField(null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
 class OpenLecture(models.Model):
     title = models.UUIDField(primary_key=True, default=uuid.uuid4, help_text="Unique ID for this particular lecture across whole website")
     lecture = models.ForeignKey('Lecture', on_delete=models.SET_NULL, null=True)
-    assignment = models.CharField(max_length=200)
+    assignment = models.ForeignKey('Assignment', on_delete=models.SET_NULL, null=True)
     remain_time = models.DateField(null=True, blank=True)
+    enroll_student = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
 
     STATUS = (
         ('o', 'Opened'),
         ('c', 'Closed'),
         ('s', 'Streaming'),
-        ('r', 'Reserved'),
+        ('e', 'Exam'),
     )
 
     status = models.CharField(
@@ -52,6 +60,10 @@ class OpenLecture(models.Model):
         default = 'o',
         help_text='Lecture is Opened now. You can take VOD Service.'
     )
+
+    class Meta:
+        ordering = ['remain_time']
+        permissions = (("can_modified_remain_time", "Set remain time"))
 
     def __str__(self):
         return '{0} ({1})'.format(self.id, self.lecture.title)
@@ -66,7 +78,7 @@ class Professor(models.Model):
         ordering = ['last_name', 'first_name']
 
     def get_absolute_url(self):
-        return reverse('prof-detail', args=[str(self.id)])
+        return reverse('professor-detail', args=[str(self.id)])
 
     def __str__(self):
         return '{0}, {1}'.format(self.last_name, self.first_name)
