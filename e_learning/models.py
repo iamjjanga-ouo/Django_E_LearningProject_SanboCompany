@@ -46,6 +46,12 @@ class OpenLecture(models.Model):
     remain_time = models.DateField(null=True, blank=True)
     enroll_student = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
 
+    @property
+    def is_overdue(self):
+        if self.remain_time and date.today() > self.remain_time:
+            return True
+        return False
+    
     STATUS = (
         ('o', 'Opened'),
         ('c', 'Closed'),
