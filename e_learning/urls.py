@@ -2,7 +2,7 @@ from django.urls import path
 from e_learning import views
 
 urlpatterns = [
-#    path('', views.index, name='index'),
+    path('', views.index, name='index'),
 ]
 
 # urlpatterns += [
