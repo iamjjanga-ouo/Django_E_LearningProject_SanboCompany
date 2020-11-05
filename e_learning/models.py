@@ -41,7 +41,7 @@ class Assignment(models.Model):
 
 
 class OpenLecture(models.Model):
-    title = models.UUIDField(primary_key=True, default=uuid.uuid4,
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4,
                              help_text="Unique ID for this particular lecture across whole website")
     lecture = models.ForeignKey('Lecture', on_delete=models.SET_NULL, null=True)
     assignment = models.ForeignKey('Assignment', on_delete=models.SET_NULL, null=True)
