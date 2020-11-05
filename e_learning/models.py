@@ -22,7 +22,7 @@ class Language(models.Model):
 class Lecture(models.Model):
     title = models.CharField(max_length=200)
     professor = models.ForeignKey('Professor', on_delete=models.SET_NULL, null=True)
-    summary = models.TestField(max_length=1000, help_text="Enter a brief descriptiuon of the book")
+    summary = models.TextField(max_length=1000, help_text="Enter a brief descriptiuon of the book")
     major = models.ForeignKey('Major', on_delete=models.SET_NULL, null=True)
     language = models.ForeignKey('Language', on_delete=models.SET_NULL, null=True)
 
