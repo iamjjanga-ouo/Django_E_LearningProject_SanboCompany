@@ -41,7 +41,7 @@ class OpenLecture(models.Model):
     STATUS = (
         ('o', 'Opened'),
         ('c', 'Closed'),
-        ('a', 'On-Air'),
+        ('s', 'Streaming'),
         ('r', 'Reserved'),
     )
 
