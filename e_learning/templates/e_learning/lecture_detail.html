@@ -1,0 +1,24 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Title : {{ lecture.title }}</h1>
+
+    <p><strong>Professor:</strong><a href="{% url 'professor-detial' lecture.professor.pk %}">{{ lecture.professor }}</a></p>
+    <p><strong>Summary:</strong> {{ lecture.summary }}</p>
+    <p><strong>Major:</strong>{{ lecture.major }}</p>
+    <p><strong>Language:</strong>{{ lecture.language }}</p>
+
+    <div style="margin-left:20px; margin-top:20px">
+        <h4>Opened lectures</h4>
+
+        {% for opened in lecture.openlecture_set.all %}
+        <hr>
+        <p class="{% if copy.status == 'o' %}text-success{% elif copy.status == 'c' %}text-warning{% endif %}">{{ opened.get_status_display }}</p>
+        {% if opened.status != 'e' %}
+            <p><strong>This lecture is examing now!</strong></p>
+        {% endif %}
+            <p><strong>Remain-time:</strong>{{ opened.remain_time }}</p>
+            <p class="text-muted"><strong>ID:</strong>{{ opened.id }}</p>
+        {% endfor %}
+    </div>
+{% endblock %}
