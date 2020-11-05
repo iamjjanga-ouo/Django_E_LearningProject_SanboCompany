@@ -1,0 +1,20 @@
+{% extends "base_generic.html" %}
+
+{% block title %}
+    <title>Sanbo E-learning</title>
+{% endblock %}
+
+{% block content %}
+    <h1>Sanbo E-learning Home</h1>
+    <p>Welcome to E-learning, a website developed by <em> LeeSihyung </em>!</p>
+    <h2>Dynamic content</h2>
+    <p>The library has the following record counts:</p>
+    <ul>
+        <li><strong>Lectures:</strong>{{ num_lectures }}</li>
+        <li><strong>Opened Lectures:</strong>{{ num_opened_lectures }}</li>
+        <li><strong>Streamings:</strong>{{ num_streamings }}</li>
+        <li><strong>Professors:</strong>{{ num_professors }}</li>
+    </ul>
+
+    <p>You have visited this page {{ num_visits }}{% if num_visits == 1 %} time {% else %} times {% endif %}</p>
+{% endblock %}
