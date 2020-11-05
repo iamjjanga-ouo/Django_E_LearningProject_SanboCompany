@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="ec2-user@54.199.222.156:22" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="centos@192.168.108.50:22">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="ec2-user@54.199.222.156:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_240_django_sanbo" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="ec2-user@54.249.21.105:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_sanbocompany" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
