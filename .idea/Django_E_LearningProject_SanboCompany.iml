@@ -14,7 +14,7 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="Remote Python 3.6.8 (sftp://ec2-user@54.199.222.156:22/usr/bin/python3)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Remote Python 3.6.8 (sftp://ec2-user@18.177.252.128:22/usr/bin/python3)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">
