@@ -26,10 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90de11d9-b516-4100-9cf6-7637b17b5849" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Django_E_LearningProject_SanboCompany.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Django_E_LearningProject_SanboCompany.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_learning/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/e_learning/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -75,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604616521131</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <created>1604846400484</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604846400484</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,21 +116,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init .idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="init .idea" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1003" y="86" key="CommitChangelistDialog2" timestamp="1604616520501">
+    <state x="1003" y="86" key="CommitChangelistDialog2" timestamp="1604846399935">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1003" y="86" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604616520501" />
-    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1604846184776">
+    <state x="1003" y="86" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604846399935" />
+    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1604846322743">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604846184776" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1604846278333">
+    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604846322743" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1604846369080">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604846278333" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604846369080" />
     <state x="682" y="413" key="git4idea.ui.GitResetDialog" timestamp="1604616237739">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
