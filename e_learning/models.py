@@ -30,7 +30,7 @@ class Lecture(models.Model):
         return reverse('lecture-detail', args=[str(self.id)])
 
     def __str__(self):
-        return self.name
+        return self.title
 
 class Assignment(models.Model):
     name = models.CharField(max_length=200)
@@ -40,7 +40,7 @@ class Assignment(models.Model):
         return self.name
 
 
-class OpenLecture(models.Model):
+class Lecture_instance(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4,
                              help_text="Unique ID for this particular lecture across whole website")
     lecture = models.ForeignKey('Lecture', on_delete=models.SET_NULL, null=True)
