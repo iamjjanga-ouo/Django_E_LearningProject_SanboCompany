@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Professor : {{ professor }}</h1>
+    <p>{{ professor.date_of_birth }} / {{ professor.major }}</p>
+
+    <div style="margin-left:20px; margin-top:20px">
+    <h4>Lectures</h4>
+
+    <dl>
+        {% for lecture in professor.lecture_set.all %}
+            <dt><a href="{% url 'lecture-detail' lecture.pk %}">{{ lecture }}</a></dt>
+            <dd>{{ lecture.summary }}</dd>
+        {% endfor %}
+    </dl>
+    </div>
+{% endblock %}
