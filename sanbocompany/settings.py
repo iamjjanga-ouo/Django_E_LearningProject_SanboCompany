@@ -26,7 +26,7 @@ SECRET_KEY = 'br6snb2$vk-yqo$39g2i_!asj*x9ils-6jx-$&qra@%robqbl9'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '54.199.222.156'
+    '18.177.252.128'
 ]
 
 
@@ -59,6 +59,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
+            './templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
