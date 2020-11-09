@@ -1,0 +1,18 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>My lecture</h1>
+
+    {% if lectureinstance_list %}
+        <ul>
+            {% for lectureinstance in lectureinstance_list %}
+            <li class="{% if lectureinstance.is_overdue %}text-danger{% endif %}">
+                <a href="{% url 'lecture-detail' lectureinstance.lecture.pk %}">{{ lectureinstance.lecture.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+
+    {% else %}
+        <p>There are no Enrolled lectures.</p>
+    {% endif %}
+{% endblock %}
