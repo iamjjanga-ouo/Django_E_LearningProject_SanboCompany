@@ -40,7 +40,7 @@ class Assignment(models.Model):
         return self.name
 
 
-class Lecture_instance(models.Model):
+class LectureInstance(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4,
                              help_text="Unique ID for this particular lecture across whole website")
     lecture = models.ForeignKey('Lecture', on_delete=models.SET_NULL, null=True)
