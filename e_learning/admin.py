@@ -1,5 +1,5 @@
 from django.contrib import admin
-from e_learning.models import Lecture, Assignment, Major, Professor, Lecture_instance, Language
+from e_learning.models import Lecture, Assignment, Major, Professor, LectureInstance, Language
 
 admin.site.register(Assignment)
 admin.site.register(Major)
@@ -16,7 +16,7 @@ class ProfessorAdmin(admin.ModelAdmin):
     inlines = [LectureInline]
 
 class Lecture_inst_Inline(admin.TabularInline):
-    model = Lecture_instance
+    model = LectureInstance
     extra = 0
 
 @admin.register(Lecture)
@@ -24,7 +24,7 @@ class LectureAdmin(admin.ModelAdmin):
     list_display = ('title', 'professor', 'major', 'language')
     inlines = [Lecture_inst_Inline]
 
-@admin.register(Lecture_instance)
+@admin.register(LectureInstance)
 class Lecture_inst_Admin(admin.ModelAdmin):
     list_display = ('lecture', 'status', 'enroll_student', 'remain_time', 'id')
     list_filter = ('status', 'remain_time')
