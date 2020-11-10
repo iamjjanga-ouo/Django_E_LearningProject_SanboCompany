@@ -6,9 +6,9 @@
     {% if lecture_list %}
     <ul>
         {% for lecture in lecture_list %}
-            <a>
+            <li>
                 <a href="{{ lecture.get_absolute_url }}">{{ lecture.title }}</a>
-                {% if perms.e_learning.can_modified_remain_time %} / <a href="{% url 'lecture_update' lecture.id %}" style="color:green" /> [Update] </a> {% endif %}
+                {% if perms.e_learning.can_modified_remain_time %} / <a href="{% url 'lecture_update' lecture.id %}" style="color:green" /> [Update] </li> {% endif %}
                 {% if perms.e_learning.can_modified_remain_time %} / <a href="{% url 'lecture_delete' lecture.id %}" style="color:red" /> [Delete] </a> {% endif %}
             </li>
         {% endfor %}
