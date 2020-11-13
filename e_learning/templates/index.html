@@ -10,10 +10,9 @@
     <h2>Dynamic content</h2>
     <p>The library has the following record counts:</p>
     <ul>
-        <li><strong>Lectures:</strong>{{ num_lectures }}</li>
-        <li><strong>Opened Lectures:</strong>{{ num_opened_lectures }}</li>
-        <li><strong>Streamings:</strong>{{ num_streamings }}</li>
-        <li><strong>Professors:</strong>{{ num_professors }}</li>
+        <li><strong>Lectures:</strong> {{ num_lectures }}</li>
+        <li><strong>Streamings:</strong> {{ num_streamings }}</li>
+        <li><strong>Professors:</strong> {{ num_professors }}</li>
     </ul>
 
     <p>You have visited this page {{ num_visits }}{% if num_visits == 1 %} time {% else %} times {% endif %}</p>
