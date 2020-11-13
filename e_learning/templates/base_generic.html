@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Add Video.js player from CDN host -->
+     <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+     <script src="https://unpkg.com/video.js/dist/video.js"></script>
+     <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+
     <!-- Add additional CSS in static file -->
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -15,14 +21,14 @@
             <div class="col-sm-2">
                 {% block sidebar %}
                     <ul class ="sidebar-nav">
-                        <a href="{% url 'index' %}">Home</a>
-                        <a href="{% url 'lectures' %}">All Lectures</a>
-                        <a href="{% url 'streamings' %}">All Streamings</a>
-                        <a href="{% url 'professors' %}">All Professors</a>
+                        <a href="{% url 'index' %}">Home</a> <br/>
+                        <a href="{% url 'lecture-list' %}">All Lectures</a> <br/>
+                        <a href="{% url 'streaming-list' %}">All Streamings</a> <br/>
+                        <a href="{% url 'professor-list' %}">All Professors</a> <br/>
                         <br/><br/><br/>
                         {% if user.is_authenticated %}
                             User : {{ user.get_username }}<br/>
-                            <a href="{% url 'my-enrolled' %}">My Enrolled</a>
+                            <a href="{% url 'my-enroll' %}">My Lecture</a> <br/>
                             <a href="{% url 'logout' %}?next={{ request.path }}">Logout</a><br/>
                         {% else %}
                             <a href="{% url 'login' %}?next={{ request.path }}">Login</a><br/>
@@ -33,9 +39,9 @@
                             <ul class="side-nav">
                                 <hr/>
                                 Hello {{ user.get_name }} professor! <br/>
-                                {% if perms.e_learning.can_modified_remain_time %}
-                                    <a href="{% url 'my-lectures' %}">My lectures</a>
-                                {% endif %}
+{#                                {% if perms.e_learning.can_modified_remain_time %}#}
+{#                                    <a href="{% url 'my-lectures' %}">My lectures</a>#}
+{#                                {% endif %}#}
                             </ul>
                         {% endif %}
                 {% endblock %}
