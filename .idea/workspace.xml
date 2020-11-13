@@ -1,33 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <expand />
+    <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90de11d9-b516-4100-9cf6-7637b17b5849" name="Default Changelist" comment="">
+    <list default="true" id="90de11d9-b516-4100-9cf6-7637b17b5849" name="Default Changelist" comment="add video.js plugins">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Django_E_LearningProject_SanboCompany.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Django_E_LearningProject_SanboCompany.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_learning/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/e_learning/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +48,8 @@
       <option name="presentableId" value="Default" />
       <updated>1604615988892</updated>
       <workItem from="1604615989924" duration="1047000" />
+      <workItem from="1605134190867" duration="9243000" />
+      <workItem from="1605226318251" duration="733000" />
     </task>
     <task id="LOCAL-00001" summary="init .idea">
       <created>1604616521131</created>
@@ -80,7 +65,49 @@
       <option name="project" value="LOCAL" />
       <updated>1604846400484</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add video.js plugins">
+      <created>1605226365663</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605226365663</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Delete Opened Lecture">
+      <created>1605226433625</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605226433625</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add video.js video tag">
+      <created>1605226445530</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605226445530</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add middleware.py">
+      <created>1605226511281</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605226511281</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add lines about ELB health-check">
+      <created>1605226602804</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605226602804</updated>
+    </task>
+    <task id="LOCAL-00008" summary="uncomment e_learning/urls.py">
+      <created>1605226654808</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605226654808</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,28 +140,59 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init .idea" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="add video.js plugins" />
+    <MESSAGE value="Delete Opened Lecture" />
+    <MESSAGE value="add video.js video tag" />
+    <MESSAGE value="add middleware.py" />
+    <MESSAGE value="add lines about ELB health-check" />
+    <MESSAGE value="uncomment e_learning/urls.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="uncomment e_learning/urls.py" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1003" y="86" key="CommitChangelistDialog2" timestamp="1604846399935">
+    <state x="39" y="16" width="1431" height="867" key="CommitChangelistDialog2" timestamp="1605226667154">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1003" y="86" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604846399935" />
-    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1604846322743">
+    <state x="39" y="16" width="1431" height="867" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605226667154" />
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1605226461480">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604846322743" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1604846369080">
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605226461480" />
+    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1605134275540">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604846369080" />
+    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605134275540" />
+    <state x="648" y="221" key="RollbackChangesDialog" timestamp="1605226669712">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="648" y="221" key="RollbackChangesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605226669712" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1605134854095">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605134854095" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1605226984833">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605226984833" />
+    <state x="-1629" y="88" width="1619" height="793" key="dock-window-1" timestamp="1605138640359">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1629" y="88" width="1619" height="793" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605138640359" />
+    <state x="667" y="252" width="586" height="536" key="find.popup" timestamp="1605226982396">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="252" width="586" height="536" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605226982396" />
     <state x="682" y="413" key="git4idea.ui.GitResetDialog" timestamp="1604616237739">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="682" y="413" key="git4idea.ui.GitResetDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604616237739" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605138471604">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605138471604" />
   </component>
 </project>
