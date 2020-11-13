@@ -10,7 +10,24 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
+import requests
 from pathlib import Path
+
+# ELB Health-check
+def get_ec2_instance_ip():
+    """
+    Try to obtain the IP address of the current EC2 instance in AWS
+    """
+    try:
+        ip = requests.get(
+          'http://169.254.169.254/latest/meta-data/local-ipv4',
+          timeout=0.01
+        ).text
+    except requests.exceptions.ConnectionError:
+        return None
+    return ip
+
+AWS_LOCAL_IP = get_ec2_instance_ip()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +43,8 @@ SECRET_KEY = 'br6snb2$vk-yqo$39g2i_!asj*x9ils-6jx-$&qra@%robqbl9'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '18.177.252.128'
+    '13.231.231.103',
+    AWS_LOCAL_IP
 ]
 
 
@@ -49,7 +67,8 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'sanbocompany.middleware.HealthCheckMiddleware',
+
 ]
 
 ROOT_URLCONF = 'sanbocompany.urls'
@@ -126,3 +145,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
