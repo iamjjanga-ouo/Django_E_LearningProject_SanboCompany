@@ -10,7 +10,10 @@
 
     <div style="margin-left:20px; margin-top:20px">
         <h4>Opened lectures</h4>
-
+        <!-- video.js code -->
+            <video id="my-player" class="video-js" controls preload="auto" poster="s3://vod-mediabucket-sihyung/test/Default/Thumbnails/test.0000000.jpg" data-setup='{}'>
+                <source src="https://vod-mediabucket-sanbo.s3-ap-northeast-1.amazonaws.com/test/Default/HLS/test.m3u8" type="application/x-mpegURL"></source>
+            </video>
         {% for opened in lecture.lecture_instance_set.all %}
         <hr>
         <p class="{% if opened.status == 'o' %}text-success{% elif opened.status == 'c' %}text-warning{% endif %}">{{ opened.get_status_display }}</p>
@@ -19,6 +22,8 @@
         {% endif %}
             <p><strong>Remain-time:</strong>{{ opened.remain_time }}</p>
             <p class="text-muted"><strong>ID:</strong>{{ opened.id }}</p>
+
+
         {% endfor %}
     </div>
 {% endblock %}
