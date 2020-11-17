@@ -6,11 +6,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90de11d9-b516-4100-9cf6-7637b17b5849" name="Default Changelist" comment="add video.js plugins">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Django_E_LearningProject_SanboCompany.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Django_E_LearningProject_SanboCompany.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sanbocompany/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/sanbocompany/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +36,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/e_learning/static/src" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sihyung\git\Django_E_LearningProject_SanboCompany\e_learning\static\src" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -50,6 +55,8 @@
       <workItem from="1604615989924" duration="1047000" />
       <workItem from="1605134190867" duration="9243000" />
       <workItem from="1605226318251" duration="733000" />
+      <workItem from="1605502446378" duration="4193000" />
+      <workItem from="1605594076017" duration="5525000" />
     </task>
     <task id="LOCAL-00001" summary="init .idea">
       <created>1604616521131</created>
@@ -107,7 +114,63 @@
       <option name="project" value="LOCAL" />
       <updated>1605226654808</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Set settings.py">
+      <created>1605596224617</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1605596224617</updated>
+    </task>
+    <task id="LOCAL-00010" summary="edit settings.py">
+      <created>1605596748575</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1605596748575</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add static main.png">
+      <created>1605600057693</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1605600057693</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add logo.png main.png">
+      <created>1605600081626</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1605600081626</updated>
+    </task>
+    <task id="LOCAL-00013" summary="edit lecture_datail.html for VOD type">
+      <created>1605600096667</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1605600096667</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Streaming List reform">
+      <created>1605600107800</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1605600107800</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add logo.png in login.html">
+      <created>1605600125163</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1605600125163</updated>
+    </task>
+    <task id="LOCAL-00016" summary="delete .gitignore">
+      <created>1605600352906</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1605600352906</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,7 +184,7 @@
             <State>
               <option name="CUSTOM_BOOLEAN_PROPERTIES">
                 <map>
-                  <entry key="Show.Git.Branches" value="false" />
+                  <entry key="Show.Git.Branches" value="true" />
                 </map>
               </option>
               <option name="FILTERS">
@@ -151,12 +214,21 @@
     <MESSAGE value="add middleware.py" />
     <MESSAGE value="add lines about ELB health-check" />
     <MESSAGE value="uncomment e_learning/urls.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="uncomment e_learning/urls.py" />
+    <MESSAGE value="Set settings.py" />
+    <MESSAGE value="edit settings.py" />
+    <MESSAGE value="add static main.png" />
+    <MESSAGE value="add logo.png main.png" />
+    <MESSAGE value="edit lecture_datail.html for VOD type" />
+    <MESSAGE value="Streaming List reform" />
+    <MESSAGE value="add logo.png in login.html" />
+    <MESSAGE value="delete .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete .gitignore" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="39" y="16" width="1431" height="867" key="CommitChangelistDialog2" timestamp="1605226667154">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="26" y="14" width="1431" height="867" key="CommitChangelistDialog2" timestamp="1605600363330">
+      <screen x="0" y="0" width="1280" height="920" />
     </state>
+    <state x="26" y="14" key="CommitChangelistDialog2/0.0.1280.920@0.0.1280.920" timestamp="1605600363330" />
     <state x="39" y="16" width="1431" height="867" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605226667154" />
     <state x="184" y="86" key="DiffContextDialog" timestamp="1605226461480">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -170,10 +242,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="648" y="221" key="RollbackChangesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605226669712" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1605134854095">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="282" y="145" key="SettingsEditor" timestamp="1605599056968">
+      <screen x="0" y="0" width="1280" height="920" />
     </state>
+    <state x="282" y="145" key="SettingsEditor/0.0.1280.920@0.0.1280.920" timestamp="1605599056968" />
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605134854095" />
+    <state x="232" y="192" key="Vcs.Push.Dialog.v2" timestamp="1605596755890">
+      <screen x="0" y="0" width="1280" height="920" />
+    </state>
+    <state x="232" y="192" key="Vcs.Push.Dialog.v2/0.0.1280.920@0.0.1280.920" timestamp="1605596755890" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1605226984833">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -182,9 +259,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1629" y="88" width="1619" height="793" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605138640359" />
-    <state x="667" y="252" width="586" height="536" key="find.popup" timestamp="1605226982396">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="445" y="223" width="554" height="536" key="find.popup" timestamp="1605594499681">
+      <screen x="0" y="0" width="1280" height="920" />
     </state>
+    <state x="445" y="223" width="554" height="536" key="find.popup/0.0.1280.920@0.0.1280.920" timestamp="1605594499681" />
     <state x="667" y="252" width="586" height="536" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605226982396" />
     <state x="682" y="413" key="git4idea.ui.GitResetDialog" timestamp="1604616237739">
       <screen x="0" y="0" width="1920" height="1040" />
