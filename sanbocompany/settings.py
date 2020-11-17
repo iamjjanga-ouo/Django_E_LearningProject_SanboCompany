@@ -104,8 +104,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django_sanbo1',
+        'USER': 'sanbo',
         'PASSWORD': 'Qwer123$',
-        'HOST': 'sanbo',
+        'HOST': 'sanbo-rds-mysql.csfnsiriy0jc.ap-southeast-2.rds.amazonaws.com',
         'PORT': '3306',
 #        'ENGINE': 'django.db.backends.sqlite3',
 #        'NAME': BASE_DIR / 'db.sqlite3',
