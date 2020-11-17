@@ -1,19 +1,29 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
-    <h1>Streaming List</h1>
-    {% if lectureinstance_list %}
-    <ul>
-        {% for lectureinstance in lectureinstance_list %}
-            <li>
-                <a href="{% url 'lecture-detail' lectureinstance.lecture.pk %}">{{ lectureinstance.lecture.title }}</a>
+    <h1>Streaming Now</h1>
+     <!-- video.js code -->
+            <video id="streaming"
+                   class="video-js"
+                   controls preload="auto"
+                   data-setup='{}'
+                   width="320"
+                   height="240"
+                   controls>
+                <source src="https://vod-mediabucket-sanbo.s3-ap-northeast-1.amazonaws.com/test/Default/HLS/test.m3u8" type="application/x-mpegURL"></source>
+            </video>
+{#    {% if lectureinstance_list %}#}
+{#    <ul>#}
+{#        {% for lectureinstance in lectureinstance_list %}#}
+{#            <li>#}
+{#                <a href="{% url 'lecture-detail' lectureinstance.lecture.pk %}">{{ lectureinstance.lecture.title }}</a>#}
 {#                {% if lectureinstance.get_queryset %}#}
 {#                    <a href="{% url 'lecture-detail' lectureinstance.lecture.pk %}">{{ lectureinstance.lecture.title }}</a>#}
 {#                {% endif %}#}
-            </li>
-        {% endfor %}
-    </ul>
-    {% else %}
-        <p>There are no lectures...</p>
-    {% endif %}
+{#            </li>#}
+{#        {% endfor %}#}
+{#    </ul>#}
+{#    {% else %}#}
+{#        <p>There are no lectures...</p>#}
+{#    {% endif %}#}
 {% endblock %}
