@@ -5,8 +5,10 @@
 {% endblock %}
 
 {% block content %}
+    {% load static %}
     <h1>Sanbo E-learning Home</h1>
-    <p>Welcome to E-learning, a website developed by <em> LeeSihyung </em>!</p>
+    <p>Welcome to E-learning, a website developed by <em> Sanbo </em>!</p>
+    <img src="{% static 'src/main.png' %}" alt="My logo" width="550" height="400">
     <h2>Dynamic content</h2>
     <p>The library has the following record counts:</p>
     <ul>
