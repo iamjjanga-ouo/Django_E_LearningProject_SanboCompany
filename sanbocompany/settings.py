@@ -43,7 +43,7 @@ SECRET_KEY = 'br6snb2$vk-yqo$39g2i_!asj*x9ils-6jx-$&qra@%robqbl9'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    #'13.231.231.103', # localhost
+    #'52.198.23.189', # localhost
     'www.sanboclub.net',
     'sanboclub.net',
     AWS_LOCAL_IP
@@ -110,7 +110,7 @@ DATABASES = {
         'PORT': '3306',
 #        'ENGINE': 'django.db.backends.sqlite3',
 #        'NAME': BASE_DIR / 'db.sqlite3',
-#       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
